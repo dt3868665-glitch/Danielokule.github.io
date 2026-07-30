@@ -44,18 +44,18 @@
     .btn:hover {
       opacity: 0.8;
     }
-    img {should be img{i
+    img { /* FIXED */
       border-radius: 50%;
       max-width: 150px;
     }
 
-    /* DARK MODE - auto switches based on phone/computer setting */
+    /* DARK MODE */
     @media (prefers-color-scheme: dark) {
       body {
         background: #121212;
         color: #ffffff;
       }
-      .project-card {
+      .project-card { /* FIXED */
         background: #1e1e1e;
       }
       .btn {
@@ -63,7 +63,7 @@
       }
     }
 
-    /* MOBILE FRIENDLY */
+    /* MOBILE */
     @media (max-width: 600px) {
       .project-card {
         width: 90%;
@@ -80,17 +80,17 @@
   
   <div class="projects">
     <h2>Projects</h2>
-    <div">
+    <div class="project-card">
       <h3>This Portfolio Website</h3>
-      <p>Built with HTML & CSS. Responsive + Dark theme
-    </div> <!-- closes project-card -->
-  </div> <!-- closes projects -->
+      <p>Built with HTML & CSS. Responsive + Dark theme.</p>
+    </div>
+  </div>
 
   <div class="contact">
     <h2>Contact Me</h2>
-    <a href="https://wa.me/your-number" class="btn">WhatsApp</a>
-    <a href="https://instagram.com/your-username" class="btn">Instagram</a>
-    <a href="mailto:your-email@gmail.com" class="btn">Email</a>
+    <a href="https://wa.me/233597251009" class="btn">WhatsApp</a>
+    <a href="https://instagram.com/daniel8785822" class="btn">Instagram</a>
+    <a href="mailto:dt8345527@gmail.com" class="btn">Email</a>
   </div>
 </body>
 </html>
