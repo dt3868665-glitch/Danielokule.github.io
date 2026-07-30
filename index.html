@@ -1,51 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Daniel's Portfolio</title>
-<style>
-body {
-  background-color: #0f0f0f;
-  font-family: Arial;
-  text-align: center;
-  padding: 20px;
-  color: white;
-}
-h1 { color: #00ff88; }
-#projects, #contact { background: #111; padding: 40px 20px; margin-top: 40px; }
-.project-card { background: #1a1a1a; padding: 20px; margin: 20px auto; border-radius: 10px; max-width: 600px; }
-.btn { display: inline-block; background: #00ff88; color: #000; padding: 12px 20px; margin: 5px; border-radius: 8px; text-decoration: none; font-weight: bold; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #ffffff;
+      color: #000;
+      margin: 0;
+      padding: 20px;
+      transition: background 0.3s, color 0.3s;
+    }
+    h1 {
+      background: #007FFF;
+      color: white;
+      padding: 20px;
+      margin: -20px -20px 20px -20px;
+    }
+    .projects {
+      margin-top: 30px;
+    }
+    .project-card {
+      background: #f1f1f1;
+      padding: 15px;
+      margin: 10px auto;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #007FFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .btn:hover {
+      opacity: 0.8;
+    }
+    img {
+      border-radius: 50%;
+      max-width: 150px;
+    }
+
+    /* DARK MODE - auto switches based on phone/computer setting */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #121212;
+        color: #ffffff;
+      }
+      .project-card {
+        background: #1e1e1e;
+      }
+      .btn {
+        background: #1e90ff;
+      }
+    }
+
+    /* MOBILE FRIENDLY */
+    @media (max-width: 600px) {
+      .project-card {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
-
-<h1>Hi, I'm Daniel Tetteh</h1>
-<p>General Science student | Web Developer learning to code</p>
-<p>My goal: Make money with coding 💰</p>
-
-<img src="image 4.jpg" width="200" style="border-radius: 50%;">
-
-<section id="projects">
-<h2>My Projects</h2>
-<div class="project-card">
-<h3>This Portfolio Website</h3>
-<p>The website you're on right now. Built with HTML & CSS. Responsive and dark theme.</p>
-</div>
-<div class="project-card">
-<h3>Coming Soon...</h3>
-<p>More projects loading. Stay tuned 🔥</p>
-</div>
-</section>
-
-<section id="contact">
-<h2>Work Together</h2>
-<p>DM me and let's build something 🚀</p>
-<div class="buttons">
-<a href="https://wa.me/233597521009" class="btn">WhatsApp Me</a>
-<a href="https://instagram.com/daniel8785822" class="btn">Instagram</a>
-<a href="mailto:dt8345527@gmail@gmail.com" class="btn">Email Me</a>
-</div>
-</section>
-
-</body>
-</html>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <h1>Hi, I'm Daniel Tetteh</h1>
+  <p>General Science student | Web Developer learning to code</p>
+  <p>My goal: Build websites that help businesses grow</p>
+  
+  <img src="image4.jpg" alt="Daniel Tetteh" width="150">
+  
+  <div class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>This Portfolio Website</h3>
+      <p>Built with HTML & CSS. Responsive + Dark theme
